@@ -1,0 +1,252 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	printf("\n\t\t\t  |-----------------------------------------------------------|\n");
+	printf("\t\t\t  |------------------PRINT A NAME WITH STARS------------------|\n");
+	printf("\t\t\t  |-----------------------------------------------------------|\n");
+	printf("\n");
+	int i,len;//len -> to calculate the number of digit of input string
+	char name[20];//name -> to store the string value
+	printf("Enter your name : ");
+	gets(name);
+	len=strlen(name);
+	for(i=0;i<len;i++)
+	{
+		name[i]=toupper(name[i]);
+	}
+	for(i=0;i<len;i++)//row 1
+	{
+		if(name[i]=='A')
+		{
+		printf("    *** ");
+		}	
+		else if(name[i]=='B'||name[i]=='D')
+		{
+			printf("   **** ");
+		}
+		else if(name[i]=='c'||name[i]=='E'||name[i]=='F'||name[i]=='I'||name[i]=='Q'||name[i]=='R'||name[i]=='S'||name[i]=='T'||name[i]=='Z')
+		{
+			printf("   *****");
+		}
+		else if(name[i]=='G')
+		{
+			printf("    ****");
+		}
+		else if(name[i]=='H'||name[i]=='k'||name[i]=='M'||name[i]=='N'||name[i]=='U'||name[i]=='v'||name[i]=='W'||name[i]=='X'||name[i]=='Y')
+		{
+			printf("   *   *");
+		}
+		else if(name[i]=='J')
+		{
+			printf("       *");
+		}
+		else if(name[i]=='L')
+		{
+			printf("   *    ");
+		}
+		else if(name[i]=='O')
+		{
+			printf("    *** ");
+		}
+	}
+	printf("\n");
+	for(i=0;i<len;i++)//row 2
+	{
+		if(name[i]=='A'||name[i]=='B'||name[i]=='D'||name[i]=='H'||name[i]=='O'||name[i]=='P'||name[i]=='Q'||name[i]=='R'||name[i]=='U'||name[i]=='V'||name[i]=='W')
+		{
+		printf("   *   *");
+		}
+		else if(name[i]=='C'||name[i]=='E'||name[i]=='F'||name[i]=='G'||name[i]=='L'||name[i]=='S')
+		{
+			printf("   *    ");
+		}
+		else if(name[i]=='I'||name[i]=='T')
+		{
+			printf("     *  ");
+		}
+		else if(name[i]=='J')
+		{
+			printf("       *");
+		}
+		else if(name[i]=='k')
+		{
+			printf("   * *  ");
+		}
+		else if(name[i]=='M')
+		{
+			printf("   ** **");
+		}
+		else if(name[i]=='N')
+		{
+			printf("   **  *");
+		}
+		else if(name[i]=='X')
+		{
+			printf("        ");
+		}
+		else if(name[i]=='Y')
+		{
+			printf("    * * ");
+		}
+		else if(name[i]=='Z')
+		{
+			printf("      * ");
+		}
+	}
+	printf("\n");
+	for(i=0;i<len;i++)//row 3
+	{
+		if(name[i]=='A'||name[i]=='B'||name[i]=='D'||name[i]=='H'||name[i]=='N'||name[i]=='O'||name[i]=='P'||name[i]=='Q'||name[i]=='R'||name[i]=='U'||name[i]=='V'||name[i]=='W')
+		{
+			printf("   *   *");
+		}
+		else if(name[i]=='C'||name[i]=='E'||name[i]=='G'||name[i]=='S'||name[i]=='L')
+		{
+			printf("   *    ");
+		}
+		else if(name[i]=='F')
+		{
+			printf("   *****");
+		}
+		else if(name[i]=='I'||name[i]=='T'||name[i]=='Y')
+		{
+			printf("     *  ");
+		}
+		else if(name[i]=='J')
+		{
+			printf("       *");
+		}
+		else if(name[i]=='K')
+		{
+			printf("   **   ");
+		}
+		else if(name[i]=='M')
+		{
+			printf("   * * *");
+		}
+		else if(name[i]=='X')
+		{
+			printf("    * * ");
+		}
+		else if(name[i]=='Z')
+		{
+			printf("        ");
+		}
+	}
+	printf("\n");
+	for(i=0;i<len;i++)//row 4
+	{
+		if(name[i]=='A'||name[i]=='B'||name[i]=='E'||name[i]=='G'||name[i]=='H'||name[i]=='P'||name[i]=='Q'||name[i]=='R'||name[i]=='S')
+		{
+			printf("   *****");
+		}
+		else if(name[i]=='C'||name[i]=='F'||name[i]=='K'||name[i]=='L')
+		{
+			printf("   *    ");
+		}
+		else if(name[i]=='D'||name[i]=='J'||name[i]=='M'||name[i]=='O'||name[i]=='U'||name[i]=='V'||name[i]=='W')
+		{
+			printf("   *   *");
+		}
+		else if(name[i]=='I'||name[i]=='T'||name[i]=='X'||name[i]=='Y'||name[i]=='Z')
+		{
+			printf("     *  ");
+		}
+		else if(name[i]=='N')
+		{
+			printf("   * * *");
+		}
+		
+	}
+	printf("\n");
+	 for(i=0;i<len;i++)//row 5
+  {
+    if(name[i]=='A'|| name[i]=='B'|| name[i]=='D'|| name[i]=='H' || name[i]=='M'|| name[i]=='O'||name[i]=='U'|| name[i]=='V')
+    {
+      printf("   *   *");
+    }
+    else if(name[i]=='C'|| name[i]=='E'|| name[i]=='F'|| name[i]=='L'|| name[i]=='P')
+    {
+      printf("   *    ");
+    }
+    if(name[i]=='G'|| name[i]=='Q'|| name[i]=='S')
+    {
+      printf("       *");
+    }
+    else if(name[i]=='K')
+    {
+      printf("   *  * ");
+    }
+    else if(name[i]=='I'||name[i]=='T'|| name[i]=='Y')
+    {
+      printf("     *  ");
+    }
+    else if(name[i]=='R')
+    {
+      printf("   *  * ");
+    }
+    else if(name[i]=='W')
+    {
+      printf("   ** **");
+    }
+    else if(name[i]=='J')
+    {
+      printf("   * *  ");
+    }
+    else if(name[i]=='N')
+    {
+      printf("   *  **");
+    }
+    else if(name[i]=='Z')
+    {
+      printf("    *    ");
+    }
+    else if(name[i]=='X')
+    {
+      printf("        ");
+    }
+  }
+  printf("\n");
+  for(i=0;i<len;i++)//row 6
+  {
+    if(name[i]=='B'|| name[i]=='C'||name[i]=='E' || name[i]=='G'|| name[i]=='I'|| name[i]=='O'||name[i]=='L'|| name[i]=='S'|| name[i]=='U'|| name[i]=='Z')
+    {
+      printf("   *****");
+    }
+    else if(name[i]=='A'|| name[i]=='H'|| name[i]=='M'|| name[i]=='N')
+    {
+      printf("   *   *");
+    }
+    else if(name[i]=='D')
+    {
+      printf("   **** ");
+	}
+    if(name[i]=='F'|| name[i]=='P')
+    {
+      printf("   *    ");
+    }
+    else if(name[i]=='J')
+    {
+      printf("   ***  ");
+    }
+    else if(name[i]=='K'||name[i]=='R')
+    {
+      printf("   *   *");
+    }
+    else if(name[i]=='Q')
+    {
+      printf("       *");
+    }
+    else if(name[i]=='T'|| name[i]=='V'|| name[i]=='Y')
+    {
+      printf("     *  ");
+    }
+    else if(name[i]=='W'||name[i]=='X')
+    {
+      printf("   *   *");
+    }
+  }
+	return 0;
+}
